@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6B8CB452002E938001BD717 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B8CB442002E938001BD717 /* UIKit.framework */; };
+		A6E354282002553400627B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E354272002553400627B60 /* Foundation.framework */; };
+		A6E354332002553400627B60 /* SnapChat_Hook_Log.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6E354322002553400627B60 /* SnapChat_Hook_Log.mm */; };
+		A6E3543E2002554C00627B60 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E3543D2002554C00627B60 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6B8CB442002E938001BD717 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6E354242002553400627B60 /* SnapChat_Hook_Log.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SnapChat_Hook_Log.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E354272002553400627B60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6E3542C2002553400627B60 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A6E3542D2002553400627B60 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A6E3542F2002553400627B60 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A6E354302002553400627B60 /* SnapChat_Hook_Log-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapChat_Hook_Log-Prefix.pch"; sourceTree = "<group>"; };
+		A6E354312002553400627B60 /* SnapChat_Hook_Log.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SnapChat_Hook_Log.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A6E354322002553400627B60 /* SnapChat_Hook_Log.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SnapChat_Hook_Log.mm; sourceTree = "<group>"; };
+		A6E354372002553400627B60 /* SnapChat_Hook_Log.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SnapChat_Hook_Log.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/SnapChat_Hook_Log.plist; sourceTree = "<group>"; };
+		A6E3543D2002554C00627B60 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = "../../网易云学习资料/libsubstrate.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6E354202002553400627B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B8CB452002E938001BD717 /* UIKit.framework in Frameworks */,
+				A6E3543E2002554C00627B60 /* libsubstrate.dylib in Frameworks */,
+				A6E354282002553400627B60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E354192002553400627B60 = {
+			isa = PBXGroup;
+			children = (
+				A6E354292002553400627B60 /* SnapChat_Hook_Log */,
+				A6E354262002553400627B60 /* Frameworks */,
+				A6E354252002553400627B60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6E354252002553400627B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6E354242002553400627B60 /* SnapChat_Hook_Log.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6E354262002553400627B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6B8CB442002E938001BD717 /* UIKit.framework */,
+				A6E3543D2002554C00627B60 /* libsubstrate.dylib */,
+				A6E354272002553400627B60 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6E354292002553400627B60 /* SnapChat_Hook_Log */ = {
+			isa = PBXGroup;
+			children = (
+				A6E354312002553400627B60 /* SnapChat_Hook_Log.xm */,
+				A6E354322002553400627B60 /* SnapChat_Hook_Log.mm */,
+				A6E3542A2002553400627B60 /* Package */,
+				A6E3542E2002553400627B60 /* Supporting Files */,
+			);
+			path = SnapChat_Hook_Log;
+			sourceTree = "<group>";
+		};
+		A6E3542A2002553400627B60 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3542B2002553400627B60 /* DEBIAN */,
+				A6E354342002553400627B60 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A6E3542B2002553400627B60 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3542C2002553400627B60 /* control.txt */,
+				A6E3542D2002553400627B60 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A6E3542E2002553400627B60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3542F2002553400627B60 /* PackageVersion.plist */,
+				A6E354302002553400627B60 /* SnapChat_Hook_Log-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6E354342002553400627B60 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A6E354352002553400627B60 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A6E354352002553400627B60 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				A6E354362002553400627B60 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		A6E354362002553400627B60 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				A6E354372002553400627B60 /* SnapChat_Hook_Log.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A6E354212002553400627B60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A6E354232002553400627B60 /* SnapChat_Hook_Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E3543A2002553400627B60 /* Build configuration list for PBXNativeTarget "SnapChat_Hook_Log" */;
+			buildPhases = (
+				A6E3541E2002553400627B60 /* ShellScript */,
+				A6E3541F2002553400627B60 /* Sources */,
+				A6E354202002553400627B60 /* Frameworks */,
+				A6E354212002553400627B60 /* Headers */,
+				A6E354222002553400627B60 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapChat_Hook_Log;
+			productName = SnapChat_Hook_Log;
+			productReference = A6E354242002553400627B60 /* SnapChat_Hook_Log.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6E3541A2002553400627B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					A6E354232002553400627B60 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZEGP83LMQ7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A6E3541D2002553400627B60 /* Build configuration list for PBXProject "SnapChat_Hook_Log" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A6E354192002553400627B60;
+			productRefGroup = A6E354252002553400627B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6E354232002553400627B60 /* SnapChat_Hook_Log */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6E3541E2002553400627B60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		A6E354222002553400627B60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6E3541F2002553400627B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E354332002553400627B60 /* SnapChat_Hook_Log.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A6E354382002553400627B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A6E354392002553400627B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A6E3543B2002553400627B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZEGP83LMQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnapChat_Hook_Log/SnapChat_Hook_Log-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.31.230;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		A6E3543C2002553400627B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZEGP83LMQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnapChat_Hook_Log/SnapChat_Hook_Log-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.31.230;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6E3541D2002553400627B60 /* Build configuration list for PBXProject "SnapChat_Hook_Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E354382002553400627B60 /* Debug */,
+				A6E354392002553400627B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E3543A2002553400627B60 /* Build configuration list for PBXNativeTarget "SnapChat_Hook_Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E3543B2002553400627B60 /* Debug */,
+				A6E3543C2002553400627B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6E3541A2002553400627B60 /* Project object */;
+}

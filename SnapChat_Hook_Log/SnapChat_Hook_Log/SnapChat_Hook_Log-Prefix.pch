@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SnapChat_Hook_Log' target in the 'SnapChat_Hook_Log' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
